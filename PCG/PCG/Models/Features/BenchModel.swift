@@ -4,7 +4,7 @@ import Foundation
 struct BenchModel {
     
     /// カード一覧
-    private var cards = [PokemonUICard]()
+    private (set) var cards = [PokemonUICard]()
     
     /// ターン変更時の処理
     mutating func changeTurn() {

@@ -4,7 +4,7 @@ import Foundation
 struct DeckModel {
     
     /// カード一覧
-    private var cards = [Card]()
+    private (set) var cards = [Card]()
     
     /// デッキ作成
     mutating func create(_ type: DeckType) -> [Card] {

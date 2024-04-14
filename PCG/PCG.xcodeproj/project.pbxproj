@@ -63,6 +63,7 @@
 		1C60F28B2BCBC51B00DA46A9 /* BattleZoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F28A2BCBC51B00DA46A9 /* BattleZoneModel.swift */; };
 		1C60F28E2BCBDC3100DA46A9 /* PokemonCardConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F28D2BCBDC3100DA46A9 /* PokemonCardConverter.swift */; };
 		1C60F2902BCBE6F900DA46A9 /* BenchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F28F2BCBE6F900DA46A9 /* BenchModel.swift */; };
+		1C60F2922BCBED4000DA46A9 /* HandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2912BCBED4000DA46A9 /* HandModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,7 @@
 		1C60F28A2BCBC51B00DA46A9 /* BattleZoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleZoneModel.swift; sourceTree = "<group>"; };
 		1C60F28D2BCBDC3100DA46A9 /* PokemonCardConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardConverter.swift; sourceTree = "<group>"; };
 		1C60F28F2BCBE6F900DA46A9 /* BenchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchModel.swift; sourceTree = "<group>"; };
+		1C60F2912BCBED4000DA46A9 /* HandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +297,7 @@
 				1C60F2802BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift */,
 				1C60F28D2BCBDC3100DA46A9 /* PokemonCardConverter.swift */,
 				1C60F28F2BCBE6F900DA46A9 /* BenchModel.swift */,
+				1C60F2912BCBED4000DA46A9 /* HandModel.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				1C60F23A2BCB8A7200DA46A9 /* Hexagon.swift in Sources */,
 				1C60F2482BCB8C4C00DA46A9 /* Card.swift in Sources */,
 				1C60F22C2BCB899200DA46A9 /* MyBattleZone.swift in Sources */,
+				1C60F2922BCBED4000DA46A9 /* HandModel.swift in Sources */,
 				1C60F28E2BCBDC3100DA46A9 /* PokemonCardConverter.swift in Sources */,
 				1C60F2362BCB8A2500DA46A9 /* OpponentBench.swift in Sources */,
 				1C60F2852BCBC1D000DA46A9 /* PokemonUICard.swift in Sources */,

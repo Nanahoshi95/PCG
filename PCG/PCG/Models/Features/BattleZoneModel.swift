@@ -4,7 +4,7 @@ import Foundation
 struct BattleZoneModel {
     
     /// 出ているカード
-    private var card: PokemonUICard? = nil
+    private (set) var card: PokemonUICard? = nil
     
     /// エネルギーをつける必要があるか（AI用）
     func needAppendingEnergy() -> Bool {
