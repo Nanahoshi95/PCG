@@ -41,14 +41,17 @@
 		1C60F25C2BCB9EFF00DA46A9 /* DeckCreatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F25B2BCB9EFF00DA46A9 /* DeckCreatorFactory.swift */; };
 		1C60F25E2BCB9F2D00DA46A9 /* DeckType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F25D2BCB9F2D00DA46A9 /* DeckType.swift */; };
 		1C60F2602BCBA3AE00DA46A9 /* DeckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F25F2BCBA3AE00DA46A9 /* DeckModel.swift */; };
-		1C60F2622BCBA9EE00DA46A9 /* PokemonCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2612BCBA9EE00DA46A9 /* PokemonCardManager.swift */; };
+		1C60F2622BCBA9EE00DA46A9 /* PokemonCardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2612BCBA9EE00DA46A9 /* PokemonCardProvider.swift */; };
 		1C60F2642BCBAB5B00DA46A9 /* PokemonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2632BCBAB5B00DA46A9 /* PokemonCard.swift */; };
 		1C60F2662BCBABA600DA46A9 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2652BCBABA600DA46A9 /* Move.swift */; };
 		1C60F2682BCBAC2D00DA46A9 /* Evolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2672BCBAC2D00DA46A9 /* Evolution.swift */; };
 		1C60F26A2BCBAC8600DA46A9 /* PokemonCardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2692BCBAC8600DA46A9 /* PokemonCardCategory.swift */; };
-		1C60F26C2BCBAE7500DA46A9 /* MoveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F26B2BCBAE7500DA46A9 /* MoveManager.swift */; };
+		1C60F26C2BCBAE7500DA46A9 /* MoveProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F26B2BCBAE7500DA46A9 /* MoveProvider.swift */; };
 		1C60F26F2BCBAED100DA46A9 /* MoveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F26E2BCBAED100DA46A9 /* MoveData.swift */; };
 		1C60F2712BCBAF7000DA46A9 /* PokemonCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2702BCBAF7000DA46A9 /* PokemonCardData.swift */; };
+		1C60F2732BCBB22200DA46A9 /* EnergyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2722BCBB22200DA46A9 /* EnergyCard.swift */; };
+		1C60F2752BCBB28400DA46A9 /* EnergyCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2742BCBB28400DA46A9 /* EnergyCardData.swift */; };
+		1C60F2772BCBB31400DA46A9 /* EnergyCardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2762BCBB31400DA46A9 /* EnergyCardProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,14 +90,17 @@
 		1C60F25B2BCB9EFF00DA46A9 /* DeckCreatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCreatorFactory.swift; sourceTree = "<group>"; };
 		1C60F25D2BCB9F2D00DA46A9 /* DeckType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckType.swift; sourceTree = "<group>"; };
 		1C60F25F2BCBA3AE00DA46A9 /* DeckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckModel.swift; sourceTree = "<group>"; };
-		1C60F2612BCBA9EE00DA46A9 /* PokemonCardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardManager.swift; sourceTree = "<group>"; };
+		1C60F2612BCBA9EE00DA46A9 /* PokemonCardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardProvider.swift; sourceTree = "<group>"; };
 		1C60F2632BCBAB5B00DA46A9 /* PokemonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCard.swift; sourceTree = "<group>"; };
 		1C60F2652BCBABA600DA46A9 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		1C60F2672BCBAC2D00DA46A9 /* Evolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evolution.swift; sourceTree = "<group>"; };
 		1C60F2692BCBAC8600DA46A9 /* PokemonCardCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardCategory.swift; sourceTree = "<group>"; };
-		1C60F26B2BCBAE7500DA46A9 /* MoveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveManager.swift; sourceTree = "<group>"; };
+		1C60F26B2BCBAE7500DA46A9 /* MoveProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveProvider.swift; sourceTree = "<group>"; };
 		1C60F26E2BCBAED100DA46A9 /* MoveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveData.swift; sourceTree = "<group>"; };
 		1C60F2702BCBAF7000DA46A9 /* PokemonCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardData.swift; sourceTree = "<group>"; };
+		1C60F2722BCBB22200DA46A9 /* EnergyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyCard.swift; sourceTree = "<group>"; };
+		1C60F2742BCBB28400DA46A9 /* EnergyCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyCardData.swift; sourceTree = "<group>"; };
+		1C60F2762BCBB31400DA46A9 /* EnergyCardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyCardProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +245,7 @@
 				1C60F2652BCBABA600DA46A9 /* Move.swift */,
 				1C60F2672BCBAC2D00DA46A9 /* Evolution.swift */,
 				1C60F2692BCBAC8600DA46A9 /* PokemonCardCategory.swift */,
+				1C60F2722BCBB22200DA46A9 /* EnergyCard.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -254,8 +261,9 @@
 				1C60F2592BCB9DF200DA46A9 /* FightingDeckCreator.swift */,
 				1C60F25B2BCB9EFF00DA46A9 /* DeckCreatorFactory.swift */,
 				1C60F25F2BCBA3AE00DA46A9 /* DeckModel.swift */,
-				1C60F2612BCBA9EE00DA46A9 /* PokemonCardManager.swift */,
-				1C60F26B2BCBAE7500DA46A9 /* MoveManager.swift */,
+				1C60F2612BCBA9EE00DA46A9 /* PokemonCardProvider.swift */,
+				1C60F26B2BCBAE7500DA46A9 /* MoveProvider.swift */,
+				1C60F2762BCBB31400DA46A9 /* EnergyCardProvider.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -265,6 +273,7 @@
 			children = (
 				1C60F26E2BCBAED100DA46A9 /* MoveData.swift */,
 				1C60F2702BCBAF7000DA46A9 /* PokemonCardData.swift */,
+				1C60F2742BCBB28400DA46A9 /* EnergyCardData.swift */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -353,23 +362,26 @@
 				1C60F24E2BCB8CBF00DA46A9 /* IDeckCreator.swift in Sources */,
 				1C60F2522BCB9AA100DA46A9 /* FireDeckCreator.swift in Sources */,
 				1C60F25E2BCB9F2D00DA46A9 /* DeckType.swift in Sources */,
-				1C60F2622BCBA9EE00DA46A9 /* PokemonCardManager.swift in Sources */,
+				1C60F2622BCBA9EE00DA46A9 /* PokemonCardProvider.swift in Sources */,
 				1C60F2582BCB9D1A00DA46A9 /* ElectricDeckCreator.swift in Sources */,
 				1C60F23A2BCB8A7200DA46A9 /* Hexagon.swift in Sources */,
 				1C60F2482BCB8C4C00DA46A9 /* Card.swift in Sources */,
 				1C60F22C2BCB899200DA46A9 /* MyBattleZone.swift in Sources */,
 				1C60F2362BCB8A2500DA46A9 /* OpponentBench.swift in Sources */,
-				1C60F26C2BCBAE7500DA46A9 /* MoveManager.swift in Sources */,
+				1C60F26C2BCBAE7500DA46A9 /* MoveProvider.swift in Sources */,
 				1C60F2462BCB8B8100DA46A9 /* CardViewModel.swift in Sources */,
 				1C60F2302BCB89E300DA46A9 /* MyHand.swift in Sources */,
 				1C60F25C2BCB9EFF00DA46A9 /* DeckCreatorFactory.swift in Sources */,
 				1C60F23C2BCB8A9800DA46A9 /* RadiusButton.swift in Sources */,
+				1C60F2772BCBB31400DA46A9 /* EnergyCardProvider.swift in Sources */,
 				1C60F2242BCB88BA00DA46A9 /* BattleView.swift in Sources */,
 				1C60F2442BCB8B3D00DA46A9 /* Sizes.swift in Sources */,
 				1C60F24C2BCB8C6F00DA46A9 /* ViewType.swift in Sources */,
 				1C60F2262BCB88C600DA46A9 /* HomeView.swift in Sources */,
+				1C60F2752BCBB28400DA46A9 /* EnergyCardData.swift in Sources */,
 				1C60F2712BCBAF7000DA46A9 /* PokemonCardData.swift in Sources */,
 				1C60F22E2BCB89C300DA46A9 /* MyBench.swift in Sources */,
+				1C60F2732BCBB22200DA46A9 /* EnergyCard.swift in Sources */,
 				1C60F26F2BCBAED100DA46A9 /* MoveData.swift in Sources */,
 				1C60F25A2BCB9DF200DA46A9 /* FightingDeckCreator.swift in Sources */,
 				1C60F2382BCB8A4800DA46A9 /* OpponentHand.swift in Sources */,

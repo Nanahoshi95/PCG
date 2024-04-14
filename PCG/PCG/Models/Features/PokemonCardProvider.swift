@@ -1,7 +1,7 @@
 import Foundation
 
-/// ポケモンカードの管理担当
-struct PokemonCardManager {
+/// ポケモンカードをデータベースから取得し、提供する構造体
+struct PokemonCardProvider {
     
     static let pokemonCards = PokemonCardData.get()
     

@@ -65,7 +65,7 @@ struct DeckModel {
     /// 種ポケモンカード取得
     mutating func getSeedPokemonCards() -> [Card] {
         let pokemonCards = getPokemonCards()
-        let seedPokemonCards = PokemonCardManager.getSeedPokemonCards()
+        let seedPokemonCards = PokemonCardProvider.getSeedPokemonCards()
         return pokemonCards.filter({ element in
             seedPokemonCards.contains(where: { $0.number == element.number })
         })
