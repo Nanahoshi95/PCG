@@ -6,8 +6,8 @@ struct MoveProvider {
     /// 技一覧
     private static let moves = MoveData.get()
     
-    /// ポケモンの技を取得
-    static func GetMove(_ number: String, _ index: Int) -> Move {
+    /// 取得
+    static func get(_ number: String, _ index: Int) -> Move {
         return moves.first(where: { $0.number == number && $0.index == index })!
     }
 }

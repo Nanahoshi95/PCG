@@ -1,8 +1,12 @@
-//
-//  TrainersCardData.swift
-//  PCG
-//
-//  Created by yamaji on 2024/04/14.
-//
-
 import Foundation
+
+/// トレーナーカードデータ
+struct TrainersCardData {
+    
+    // 取得
+    static func get() -> [TrainersCard] {
+        return [
+            TrainersCard(number: "037489"),
+        ]
+    }
+}

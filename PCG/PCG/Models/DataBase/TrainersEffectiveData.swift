@@ -1,8 +1,12 @@
-//
-//  TrainersEffectiveData.swift
-//  PCG
-//
-//  Created by yamaji on 2024/04/14.
-//
-
 import Foundation
+
+/// トレーナーの効果データ一覧
+struct TrainersEffectiveData {
+    
+    // 取得
+    static func get() -> [TrainersEffective] {
+        return [
+            TrainersEffective(number: "037489", name: "エネルギー回収")
+        ]
+    }
+}

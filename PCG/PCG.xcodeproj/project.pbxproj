@@ -52,6 +52,11 @@
 		1C60F2732BCBB22200DA46A9 /* EnergyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2722BCBB22200DA46A9 /* EnergyCard.swift */; };
 		1C60F2752BCBB28400DA46A9 /* EnergyCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2742BCBB28400DA46A9 /* EnergyCardData.swift */; };
 		1C60F2772BCBB31400DA46A9 /* EnergyCardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2762BCBB31400DA46A9 /* EnergyCardProvider.swift */; };
+		1C60F2792BCBB8BA00DA46A9 /* TrainersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2782BCBB8BA00DA46A9 /* TrainersCard.swift */; };
+		1C60F27B2BCBB95000DA46A9 /* TrainersEffective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F27A2BCBB95000DA46A9 /* TrainersEffective.swift */; };
+		1C60F27D2BCBBA1200DA46A9 /* TrainersCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F27C2BCBBA1200DA46A9 /* TrainersCardData.swift */; };
+		1C60F27F2BCBBAD200DA46A9 /* TrainersEffectiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F27E2BCBBAD200DA46A9 /* TrainersEffectiveData.swift */; };
+		1C60F2812BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2802BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +106,11 @@
 		1C60F2722BCBB22200DA46A9 /* EnergyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyCard.swift; sourceTree = "<group>"; };
 		1C60F2742BCBB28400DA46A9 /* EnergyCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyCardData.swift; sourceTree = "<group>"; };
 		1C60F2762BCBB31400DA46A9 /* EnergyCardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyCardProvider.swift; sourceTree = "<group>"; };
+		1C60F2782BCBB8BA00DA46A9 /* TrainersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersCard.swift; sourceTree = "<group>"; };
+		1C60F27A2BCBB95000DA46A9 /* TrainersEffective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersEffective.swift; sourceTree = "<group>"; };
+		1C60F27C2BCBBA1200DA46A9 /* TrainersCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersCardData.swift; sourceTree = "<group>"; };
+		1C60F27E2BCBBAD200DA46A9 /* TrainersEffectiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersEffectiveData.swift; sourceTree = "<group>"; };
+		1C60F2802BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersEffectiveProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +256,8 @@
 				1C60F2672BCBAC2D00DA46A9 /* Evolution.swift */,
 				1C60F2692BCBAC8600DA46A9 /* PokemonCardCategory.swift */,
 				1C60F2722BCBB22200DA46A9 /* EnergyCard.swift */,
+				1C60F2782BCBB8BA00DA46A9 /* TrainersCard.swift */,
+				1C60F27A2BCBB95000DA46A9 /* TrainersEffective.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -264,6 +276,7 @@
 				1C60F2612BCBA9EE00DA46A9 /* PokemonCardProvider.swift */,
 				1C60F26B2BCBAE7500DA46A9 /* MoveProvider.swift */,
 				1C60F2762BCBB31400DA46A9 /* EnergyCardProvider.swift */,
+				1C60F2802BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -274,6 +287,8 @@
 				1C60F26E2BCBAED100DA46A9 /* MoveData.swift */,
 				1C60F2702BCBAF7000DA46A9 /* PokemonCardData.swift */,
 				1C60F2742BCBB28400DA46A9 /* EnergyCardData.swift */,
+				1C60F27C2BCBBA1200DA46A9 /* TrainersCardData.swift */,
+				1C60F27E2BCBBAD200DA46A9 /* TrainersEffectiveData.swift */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -348,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C60F27B2BCBB95000DA46A9 /* TrainersEffective.swift in Sources */,
 				1C60F2662BCBABA600DA46A9 /* Move.swift in Sources */,
 				1C60F2402BCB8AF200DA46A9 /* Fonts.swift in Sources */,
 				1C60F22A2BCB895000DA46A9 /* WidthGap.swift in Sources */,
@@ -379,6 +395,7 @@
 				1C60F24C2BCB8C6F00DA46A9 /* ViewType.swift in Sources */,
 				1C60F2262BCB88C600DA46A9 /* HomeView.swift in Sources */,
 				1C60F2752BCBB28400DA46A9 /* EnergyCardData.swift in Sources */,
+				1C60F2792BCBB8BA00DA46A9 /* TrainersCard.swift in Sources */,
 				1C60F2712BCBAF7000DA46A9 /* PokemonCardData.swift in Sources */,
 				1C60F22E2BCB89C300DA46A9 /* MyBench.swift in Sources */,
 				1C60F2732BCBB22200DA46A9 /* EnergyCard.swift in Sources */,
@@ -387,9 +404,12 @@
 				1C60F2382BCB8A4800DA46A9 /* OpponentHand.swift in Sources */,
 				1C60F20A2BCB874000DA46A9 /* PCGApp.swift in Sources */,
 				1C60F26A2BCBAC8600DA46A9 /* PokemonCardCategory.swift in Sources */,
+				1C60F27D2BCBBA1200DA46A9 /* TrainersCardData.swift in Sources */,
 				1C60F2602BCBA3AE00DA46A9 /* DeckModel.swift in Sources */,
 				1C60F2282BCB88E800DA46A9 /* HeightGap.swift in Sources */,
 				1C60F2502BCB8F2C00DA46A9 /* CardCategory.swift in Sources */,
+				1C60F27F2BCBBAD200DA46A9 /* TrainersEffectiveData.swift in Sources */,
+				1C60F2812BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift in Sources */,
 				1C60F2542BCB9B7300DA46A9 /* WaterDeckCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
