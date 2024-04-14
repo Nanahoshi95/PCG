@@ -3,7 +3,8 @@ import Foundation
 /// ポケモンカードをデータベースから取得し、提供する構造体
 struct PokemonCardProvider {
     
-    static let pokemonCards = PokemonCardData.get()
+    // ポケモンカード一覧
+    private static let pokemonCards = PokemonCardData.get()
     
     /// 指定カード一覧の中に種ポケモンが存在するかどうかを返します。
     static func existsSeedPokemon(_ cards: [Card]) -> Bool {
