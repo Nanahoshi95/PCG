@@ -57,6 +57,9 @@
 		1C60F27D2BCBBA1200DA46A9 /* TrainersCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F27C2BCBBA1200DA46A9 /* TrainersCardData.swift */; };
 		1C60F27F2BCBBAD200DA46A9 /* TrainersEffectiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F27E2BCBBAD200DA46A9 /* TrainersEffectiveData.swift */; };
 		1C60F2812BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2802BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift */; };
+		1C60F2852BCBC1D000DA46A9 /* PokemonUICard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2842BCBC1D000DA46A9 /* PokemonUICard.swift */; };
+		1C60F2872BCBC36200DA46A9 /* EnergyUICard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2862BCBC36200DA46A9 /* EnergyUICard.swift */; };
+		1C60F2892BCBC3E600DA46A9 /* TrainersUICard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2882BCBC3E600DA46A9 /* TrainersUICard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +114,9 @@
 		1C60F27C2BCBBA1200DA46A9 /* TrainersCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersCardData.swift; sourceTree = "<group>"; };
 		1C60F27E2BCBBAD200DA46A9 /* TrainersEffectiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersEffectiveData.swift; sourceTree = "<group>"; };
 		1C60F2802BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersEffectiveProvider.swift; sourceTree = "<group>"; };
+		1C60F2842BCBC1D000DA46A9 /* PokemonUICard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonUICard.swift; sourceTree = "<group>"; };
+		1C60F2862BCBC36200DA46A9 /* EnergyUICard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyUICard.swift; sourceTree = "<group>"; };
+		1C60F2882BCBC3E600DA46A9 /* TrainersUICard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersUICard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +264,9 @@
 				1C60F2722BCBB22200DA46A9 /* EnergyCard.swift */,
 				1C60F2782BCBB8BA00DA46A9 /* TrainersCard.swift */,
 				1C60F27A2BCBB95000DA46A9 /* TrainersEffective.swift */,
+				1C60F2842BCBC1D000DA46A9 /* PokemonUICard.swift */,
+				1C60F2862BCBC36200DA46A9 /* EnergyUICard.swift */,
+				1C60F2882BCBC3E600DA46A9 /* TrainersUICard.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -373,6 +382,7 @@
 				1C60F24A2BCB8C6200DA46A9 /* Energy.swift in Sources */,
 				1C60F20C2BCB874000DA46A9 /* ContentView.swift in Sources */,
 				1C60F2562BCB9C6700DA46A9 /* GlassDeckCreator.swift in Sources */,
+				1C60F2892BCBC3E600DA46A9 /* TrainersUICard.swift in Sources */,
 				1C60F2642BCBAB5B00DA46A9 /* PokemonCard.swift in Sources */,
 				1C60F2332BCB8A0300DA46A9 /* OpponentBattleZone.swift in Sources */,
 				1C60F24E2BCB8CBF00DA46A9 /* IDeckCreator.swift in Sources */,
@@ -384,6 +394,7 @@
 				1C60F2482BCB8C4C00DA46A9 /* Card.swift in Sources */,
 				1C60F22C2BCB899200DA46A9 /* MyBattleZone.swift in Sources */,
 				1C60F2362BCB8A2500DA46A9 /* OpponentBench.swift in Sources */,
+				1C60F2852BCBC1D000DA46A9 /* PokemonUICard.swift in Sources */,
 				1C60F26C2BCBAE7500DA46A9 /* MoveProvider.swift in Sources */,
 				1C60F2462BCB8B8100DA46A9 /* CardViewModel.swift in Sources */,
 				1C60F2302BCB89E300DA46A9 /* MyHand.swift in Sources */,
@@ -393,6 +404,7 @@
 				1C60F2242BCB88BA00DA46A9 /* BattleView.swift in Sources */,
 				1C60F2442BCB8B3D00DA46A9 /* Sizes.swift in Sources */,
 				1C60F24C2BCB8C6F00DA46A9 /* ViewType.swift in Sources */,
+				1C60F2872BCBC36200DA46A9 /* EnergyUICard.swift in Sources */,
 				1C60F2262BCB88C600DA46A9 /* HomeView.swift in Sources */,
 				1C60F2752BCBB28400DA46A9 /* EnergyCardData.swift in Sources */,
 				1C60F2792BCBB8BA00DA46A9 /* TrainersCard.swift in Sources */,
