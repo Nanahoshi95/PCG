@@ -11,6 +11,27 @@
 		1C60F20C2BCB874000DA46A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F20B2BCB874000DA46A9 /* ContentView.swift */; };
 		1C60F20E2BCB874300DA46A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C60F20D2BCB874300DA46A9 /* Assets.xcassets */; };
 		1C60F2112BCB874300DA46A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C60F2102BCB874300DA46A9 /* Preview Assets.xcassets */; };
+		1C60F2222BCB888A00DA46A9 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2212BCB888A00DA46A9 /* RouterView.swift */; };
+		1C60F2242BCB88BA00DA46A9 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2232BCB88BA00DA46A9 /* BattleView.swift */; };
+		1C60F2262BCB88C600DA46A9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2252BCB88C600DA46A9 /* HomeView.swift */; };
+		1C60F2282BCB88E800DA46A9 /* HeightGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2272BCB88E800DA46A9 /* HeightGap.swift */; };
+		1C60F22A2BCB895000DA46A9 /* WidthGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2292BCB895000DA46A9 /* WidthGap.swift */; };
+		1C60F22C2BCB899200DA46A9 /* MyBattleZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F22B2BCB899200DA46A9 /* MyBattleZone.swift */; };
+		1C60F22E2BCB89C300DA46A9 /* MyBench.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F22D2BCB89C300DA46A9 /* MyBench.swift */; };
+		1C60F2302BCB89E300DA46A9 /* MyHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F22F2BCB89E300DA46A9 /* MyHand.swift */; };
+		1C60F2332BCB8A0300DA46A9 /* OpponentBattleZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2322BCB8A0300DA46A9 /* OpponentBattleZone.swift */; };
+		1C60F2362BCB8A2500DA46A9 /* OpponentBench.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2352BCB8A2500DA46A9 /* OpponentBench.swift */; };
+		1C60F2382BCB8A4800DA46A9 /* OpponentHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2372BCB8A4800DA46A9 /* OpponentHand.swift */; };
+		1C60F23A2BCB8A7200DA46A9 /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2392BCB8A7200DA46A9 /* Hexagon.swift */; };
+		1C60F23C2BCB8A9800DA46A9 /* RadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F23B2BCB8A9800DA46A9 /* RadiusButton.swift */; };
+		1C60F2402BCB8AF200DA46A9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F23F2BCB8AF200DA46A9 /* Fonts.swift */; };
+		1C60F2422BCB8B2400DA46A9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2412BCB8B2400DA46A9 /* Colors.swift */; };
+		1C60F2442BCB8B3D00DA46A9 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2432BCB8B3D00DA46A9 /* Sizes.swift */; };
+		1C60F2462BCB8B8100DA46A9 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2452BCB8B8100DA46A9 /* CardViewModel.swift */; };
+		1C60F2482BCB8C4C00DA46A9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2472BCB8C4C00DA46A9 /* Card.swift */; };
+		1C60F24A2BCB8C6200DA46A9 /* Energy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2492BCB8C6200DA46A9 /* Energy.swift */; };
+		1C60F24C2BCB8C6F00DA46A9 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F24B2BCB8C6F00DA46A9 /* ViewType.swift */; };
+		1C60F24E2BCB8CBF00DA46A9 /* DeckCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F24D2BCB8CBF00DA46A9 /* DeckCreator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +40,27 @@
 		1C60F20B2BCB874000DA46A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C60F20D2BCB874300DA46A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C60F2102BCB874300DA46A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C60F2212BCB888A00DA46A9 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		1C60F2232BCB88BA00DA46A9 /* BattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
+		1C60F2252BCB88C600DA46A9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1C60F2272BCB88E800DA46A9 /* HeightGap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightGap.swift; sourceTree = "<group>"; };
+		1C60F2292BCB895000DA46A9 /* WidthGap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidthGap.swift; sourceTree = "<group>"; };
+		1C60F22B2BCB899200DA46A9 /* MyBattleZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBattleZone.swift; sourceTree = "<group>"; };
+		1C60F22D2BCB89C300DA46A9 /* MyBench.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBench.swift; sourceTree = "<group>"; };
+		1C60F22F2BCB89E300DA46A9 /* MyHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHand.swift; sourceTree = "<group>"; };
+		1C60F2322BCB8A0300DA46A9 /* OpponentBattleZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentBattleZone.swift; sourceTree = "<group>"; };
+		1C60F2352BCB8A2500DA46A9 /* OpponentBench.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentBench.swift; sourceTree = "<group>"; };
+		1C60F2372BCB8A4800DA46A9 /* OpponentHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentHand.swift; sourceTree = "<group>"; };
+		1C60F2392BCB8A7200DA46A9 /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
+		1C60F23B2BCB8A9800DA46A9 /* RadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusButton.swift; sourceTree = "<group>"; };
+		1C60F23F2BCB8AF200DA46A9 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		1C60F2412BCB8B2400DA46A9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1C60F2432BCB8B3D00DA46A9 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		1C60F2452BCB8B8100DA46A9 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		1C60F2472BCB8C4C00DA46A9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		1C60F2492BCB8C6200DA46A9 /* Energy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Energy.swift; sourceTree = "<group>"; };
+		1C60F24B2BCB8C6F00DA46A9 /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		1C60F24D2BCB8CBF00DA46A9 /* DeckCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +93,9 @@
 		1C60F2082BCB874000DA46A9 /* PCG */ = {
 			isa = PBXGroup;
 			children = (
+				1C60F2192BCB881500DA46A9 /* Models */,
+				1C60F2182BCB880E00DA46A9 /* ViewModels */,
+				1C60F2172BCB880500DA46A9 /* Views */,
 				1C60F2092BCB874000DA46A9 /* PCGApp.swift */,
 				1C60F20B2BCB874000DA46A9 /* ContentView.swift */,
 				1C60F20D2BCB874300DA46A9 /* Assets.xcassets */,
@@ -65,6 +110,104 @@
 				1C60F2102BCB874300DA46A9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1C60F2172BCB880500DA46A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C60F21E2BCB884400DA46A9 /* Dialogs */,
+				1C60F21D2BCB883C00DA46A9 /* Pages */,
+				1C60F21C2BCB883500DA46A9 /* Router */,
+				1C60F21B2BCB882F00DA46A9 /* Theme */,
+				1C60F21A2BCB881C00DA46A9 /* Widgets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C60F2182BCB880E00DA46A9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1C60F2452BCB8B8100DA46A9 /* CardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1C60F2192BCB881500DA46A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C60F2202BCB885700DA46A9 /* Features */,
+				1C60F21F2BCB885200DA46A9 /* Types */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C60F21A2BCB881C00DA46A9 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				1C60F2272BCB88E800DA46A9 /* HeightGap.swift */,
+				1C60F2292BCB895000DA46A9 /* WidthGap.swift */,
+				1C60F22B2BCB899200DA46A9 /* MyBattleZone.swift */,
+				1C60F22D2BCB89C300DA46A9 /* MyBench.swift */,
+				1C60F22F2BCB89E300DA46A9 /* MyHand.swift */,
+				1C60F2322BCB8A0300DA46A9 /* OpponentBattleZone.swift */,
+				1C60F2352BCB8A2500DA46A9 /* OpponentBench.swift */,
+				1C60F2372BCB8A4800DA46A9 /* OpponentHand.swift */,
+				1C60F2392BCB8A7200DA46A9 /* Hexagon.swift */,
+				1C60F23B2BCB8A9800DA46A9 /* RadiusButton.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		1C60F21B2BCB882F00DA46A9 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				1C60F23F2BCB8AF200DA46A9 /* Fonts.swift */,
+				1C60F2412BCB8B2400DA46A9 /* Colors.swift */,
+				1C60F2432BCB8B3D00DA46A9 /* Sizes.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		1C60F21C2BCB883500DA46A9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1C60F2212BCB888A00DA46A9 /* RouterView.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1C60F21D2BCB883C00DA46A9 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				1C60F2232BCB88BA00DA46A9 /* BattleView.swift */,
+				1C60F2252BCB88C600DA46A9 /* HomeView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		1C60F21E2BCB884400DA46A9 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		1C60F21F2BCB885200DA46A9 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				1C60F2472BCB8C4C00DA46A9 /* Card.swift */,
+				1C60F2492BCB8C6200DA46A9 /* Energy.swift */,
+				1C60F24B2BCB8C6F00DA46A9 /* ViewType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		1C60F2202BCB885700DA46A9 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1C60F24D2BCB8CBF00DA46A9 /* DeckCreator.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +280,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C60F2402BCB8AF200DA46A9 /* Fonts.swift in Sources */,
+				1C60F22A2BCB895000DA46A9 /* WidthGap.swift in Sources */,
+				1C60F2222BCB888A00DA46A9 /* RouterView.swift in Sources */,
+				1C60F2422BCB8B2400DA46A9 /* Colors.swift in Sources */,
+				1C60F24A2BCB8C6200DA46A9 /* Energy.swift in Sources */,
 				1C60F20C2BCB874000DA46A9 /* ContentView.swift in Sources */,
+				1C60F2332BCB8A0300DA46A9 /* OpponentBattleZone.swift in Sources */,
+				1C60F24E2BCB8CBF00DA46A9 /* DeckCreator.swift in Sources */,
+				1C60F23A2BCB8A7200DA46A9 /* Hexagon.swift in Sources */,
+				1C60F2482BCB8C4C00DA46A9 /* Card.swift in Sources */,
+				1C60F22C2BCB899200DA46A9 /* MyBattleZone.swift in Sources */,
+				1C60F2362BCB8A2500DA46A9 /* OpponentBench.swift in Sources */,
+				1C60F2462BCB8B8100DA46A9 /* CardViewModel.swift in Sources */,
+				1C60F2302BCB89E300DA46A9 /* MyHand.swift in Sources */,
+				1C60F23C2BCB8A9800DA46A9 /* RadiusButton.swift in Sources */,
+				1C60F2242BCB88BA00DA46A9 /* BattleView.swift in Sources */,
+				1C60F2442BCB8B3D00DA46A9 /* Sizes.swift in Sources */,
+				1C60F24C2BCB8C6F00DA46A9 /* ViewType.swift in Sources */,
+				1C60F2262BCB88C600DA46A9 /* HomeView.swift in Sources */,
+				1C60F22E2BCB89C300DA46A9 /* MyBench.swift in Sources */,
+				1C60F2382BCB8A4800DA46A9 /* OpponentHand.swift in Sources */,
 				1C60F20A2BCB874000DA46A9 /* PCGApp.swift in Sources */,
+				1C60F2282BCB88E800DA46A9 /* HeightGap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
