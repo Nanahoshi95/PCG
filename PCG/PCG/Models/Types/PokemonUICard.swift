@@ -46,7 +46,7 @@ struct PokemonUICard : Identifiable, Equatable {
     var move2: Move?
     
     /// 逃げるエネルギー
-    var retreatEnergy: Energy
+    var retreatEnergy: Energy?
     
     /// 逃げるエネルギー数
     var retreatCount: Int

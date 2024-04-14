@@ -24,6 +24,11 @@ struct PokemonCardProvider {
         return result
     }
     
+    /// 指定のカードを取得
+    static func getCard(_ card: Card) -> PokemonCard {
+        return pokemonCards.first(where: {$0.number == card.number})!
+    }
+    
     /// 種ポケモン一覧を取得します。
     static func getSeedPokemonCards() -> [PokemonCard] {
         return pokemonCards.filter({ $0.evolution == .Basic })
