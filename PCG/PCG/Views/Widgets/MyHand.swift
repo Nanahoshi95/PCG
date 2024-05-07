@@ -2,11 +2,15 @@ import SwiftUI
 
 /// 自分の手札
 struct MyHand: View {
+    
+    var myHands: [PokemonUICard]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            ForEach(myHands) { card in
+                CardImage(cardNo: card.number, size: .Normal)
+                
+            }
+        }
     }
-}
-
-#Preview {
-    MyHand()
 }

@@ -17,7 +17,7 @@ struct BenchModel {
     
     /// まだベンチにポケモンを置けるか
     func canAppend() -> Bool {
-        var maxCount = 5
+        let maxCount = 5
         return cards.count < maxCount
     }
     
