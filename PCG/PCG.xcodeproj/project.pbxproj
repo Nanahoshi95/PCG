@@ -14,8 +14,6 @@
 		1C60F2222BCB888A00DA46A9 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2212BCB888A00DA46A9 /* RouterView.swift */; };
 		1C60F2242BCB88BA00DA46A9 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2232BCB88BA00DA46A9 /* BattleView.swift */; };
 		1C60F2262BCB88C600DA46A9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2252BCB88C600DA46A9 /* HomeView.swift */; };
-		1C60F2282BCB88E800DA46A9 /* HeightGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2272BCB88E800DA46A9 /* HeightGap.swift */; };
-		1C60F22A2BCB895000DA46A9 /* WidthGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2292BCB895000DA46A9 /* WidthGap.swift */; };
 		1C60F22C2BCB899200DA46A9 /* MyBattleZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F22B2BCB899200DA46A9 /* MyBattleZone.swift */; };
 		1C60F22E2BCB89C300DA46A9 /* MyBench.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F22D2BCB89C300DA46A9 /* MyBench.swift */; };
 		1C60F2302BCB89E300DA46A9 /* MyHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F22F2BCB89E300DA46A9 /* MyHand.swift */; };
@@ -75,8 +73,6 @@
 		1C60F2212BCB888A00DA46A9 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		1C60F2232BCB88BA00DA46A9 /* BattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
 		1C60F2252BCB88C600DA46A9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		1C60F2272BCB88E800DA46A9 /* HeightGap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightGap.swift; sourceTree = "<group>"; };
-		1C60F2292BCB895000DA46A9 /* WidthGap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidthGap.swift; sourceTree = "<group>"; };
 		1C60F22B2BCB899200DA46A9 /* MyBattleZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBattleZone.swift; sourceTree = "<group>"; };
 		1C60F22D2BCB89C300DA46A9 /* MyBench.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBench.swift; sourceTree = "<group>"; };
 		1C60F22F2BCB89E300DA46A9 /* MyHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHand.swift; sourceTree = "<group>"; };
@@ -209,8 +205,6 @@
 		1C60F21A2BCB881C00DA46A9 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				1C60F2272BCB88E800DA46A9 /* HeightGap.swift */,
-				1C60F2292BCB895000DA46A9 /* WidthGap.swift */,
 				1C60F22B2BCB899200DA46A9 /* MyBattleZone.swift */,
 				1C60F22D2BCB89C300DA46A9 /* MyBench.swift */,
 				1C60F22F2BCB89E300DA46A9 /* MyHand.swift */,
@@ -387,7 +381,6 @@
 				1C60F27B2BCBB95000DA46A9 /* TrainersEffective.swift in Sources */,
 				1C60F2662BCBABA600DA46A9 /* Move.swift in Sources */,
 				1C60F2402BCB8AF200DA46A9 /* Fonts.swift in Sources */,
-				1C60F22A2BCB895000DA46A9 /* WidthGap.swift in Sources */,
 				1C60F2682BCBAC2D00DA46A9 /* Evolution.swift in Sources */,
 				1C60F2222BCB888A00DA46A9 /* RouterView.swift in Sources */,
 				1C60F2422BCB8B2400DA46A9 /* Colors.swift in Sources */,
@@ -434,7 +427,6 @@
 				1C60F27D2BCBBA1200DA46A9 /* TrainersCardData.swift in Sources */,
 				1C60F28B2BCBC51B00DA46A9 /* BattleZoneModel.swift in Sources */,
 				1C60F2602BCBA3AE00DA46A9 /* DeckModel.swift in Sources */,
-				1C60F2282BCB88E800DA46A9 /* HeightGap.swift in Sources */,
 				1C60F2502BCB8F2C00DA46A9 /* CardCategory.swift in Sources */,
 				1C60F27F2BCBBAD200DA46A9 /* TrainersEffectiveData.swift in Sources */,
 				1C60F2812BCBBBBA00DA46A9 /* TrainersEffectiveProvider.swift in Sources */,
