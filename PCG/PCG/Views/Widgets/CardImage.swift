@@ -3,24 +3,24 @@ import SwiftUI
 struct CardImage: View {
     
     /// サイズ
-    enum Size {
-        case Normal, Small
+    enum CardType {
+        case Hand, Bench, BattleZone
     }
     
     /// 画像番号
     var cardNo: String
     
-    /// サイズ
-    var size: Size
+    /// カード種別
+    var cardType: CardType
     
     // 幅
     var width: CGFloat {
-        return size == .Normal ? 90 : 60
+        return cardType == .Bench ? 60 : 90
     }
     
     // 高さ
     var height: CGFloat {
-        return size == .Normal ? 120: 80
+        return cardType == .Bench ? 80: 120
     }
     
     
@@ -32,5 +32,5 @@ struct CardImage: View {
 }
 
 #Preview {
-    CardImage(cardNo: "037479", size: .Normal)
+    CardImage(cardNo: "037479", cardType: .BattleZone)
 }

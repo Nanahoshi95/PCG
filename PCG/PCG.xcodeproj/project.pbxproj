@@ -62,6 +62,12 @@
 		1C60F28E2BCBDC3100DA46A9 /* PokemonCardConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F28D2BCBDC3100DA46A9 /* PokemonCardConverter.swift */; };
 		1C60F2902BCBE6F900DA46A9 /* BenchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F28F2BCBE6F900DA46A9 /* BenchModel.swift */; };
 		1C60F2922BCBED4000DA46A9 /* HandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2912BCBED4000DA46A9 /* HandModel.swift */; };
+		1C72BF0B2BEF3F0200A384E2 /* PlayMat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72BF0A2BEF3F0200A384E2 /* PlayMat.swift */; };
+		1C72BF0D2BEF44D300A384E2 /* TrainersZoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72BF0C2BEF44D300A384E2 /* TrainersZoneModel.swift */; };
+		1C72BF0F2BEF459800A384E2 /* SideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72BF0E2BEF459800A384E2 /* SideModel.swift */; };
+		1CE54FDC2BEBB0E200134D82 /* DamageCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE54FDB2BEBB0E200134D82 /* DamageCount.swift */; };
+		1CE54FDE2BEBB1D700134D82 /* CardEnergies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE54FDD2BEBB1D700134D82 /* CardEnergies.swift */; };
+		1CE54FE02BEBB69E00134D82 /* CardStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE54FDF2BEBB69E00134D82 /* CardStatus.swift */; };
 		1CF9E15B2BEA5CAC007AFA43 /* CardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF9E15A2BEA5CAC007AFA43 /* CardImage.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +128,12 @@
 		1C60F28D2BCBDC3100DA46A9 /* PokemonCardConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardConverter.swift; sourceTree = "<group>"; };
 		1C60F28F2BCBE6F900DA46A9 /* BenchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchModel.swift; sourceTree = "<group>"; };
 		1C60F2912BCBED4000DA46A9 /* HandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandModel.swift; sourceTree = "<group>"; };
+		1C72BF0A2BEF3F0200A384E2 /* PlayMat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMat.swift; sourceTree = "<group>"; };
+		1C72BF0C2BEF44D300A384E2 /* TrainersZoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersZoneModel.swift; sourceTree = "<group>"; };
+		1C72BF0E2BEF459800A384E2 /* SideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideModel.swift; sourceTree = "<group>"; };
+		1CE54FDB2BEBB0E200134D82 /* DamageCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageCount.swift; sourceTree = "<group>"; };
+		1CE54FDD2BEBB1D700134D82 /* CardEnergies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnergies.swift; sourceTree = "<group>"; };
+		1CE54FDF2BEBB69E00134D82 /* CardStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStatus.swift; sourceTree = "<group>"; };
 		1CF9E15A2BEA5CAC007AFA43 /* CardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +228,10 @@
 				1C60F2392BCB8A7200DA46A9 /* Hexagon.swift */,
 				1C60F23B2BCB8A9800DA46A9 /* RadiusButton.swift */,
 				1CF9E15A2BEA5CAC007AFA43 /* CardImage.swift */,
+				1CE54FDB2BEBB0E200134D82 /* DamageCount.swift */,
+				1CE54FDD2BEBB1D700134D82 /* CardEnergies.swift */,
+				1CE54FDF2BEBB69E00134D82 /* CardStatus.swift */,
+				1C72BF0A2BEF3F0200A384E2 /* PlayMat.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -295,6 +311,8 @@
 				1C60F28D2BCBDC3100DA46A9 /* PokemonCardConverter.swift */,
 				1C60F28F2BCBE6F900DA46A9 /* BenchModel.swift */,
 				1C60F2912BCBED4000DA46A9 /* HandModel.swift */,
+				1C72BF0C2BEF44D300A384E2 /* TrainersZoneModel.swift */,
+				1C72BF0E2BEF459800A384E2 /* SideModel.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -381,14 +399,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C72BF0B2BEF3F0200A384E2 /* PlayMat.swift in Sources */,
 				1C60F27B2BCBB95000DA46A9 /* TrainersEffective.swift in Sources */,
 				1C60F2662BCBABA600DA46A9 /* Move.swift in Sources */,
 				1C60F2402BCB8AF200DA46A9 /* Fonts.swift in Sources */,
+				1CE54FDC2BEBB0E200134D82 /* DamageCount.swift in Sources */,
 				1C60F2682BCBAC2D00DA46A9 /* Evolution.swift in Sources */,
 				1C60F2222BCB888A00DA46A9 /* RouterView.swift in Sources */,
 				1C60F2422BCB8B2400DA46A9 /* Colors.swift in Sources */,
 				1C60F24A2BCB8C6200DA46A9 /* Energy.swift in Sources */,
+				1CE54FE02BEBB69E00134D82 /* CardStatus.swift in Sources */,
 				1C60F20C2BCB874000DA46A9 /* ContentView.swift in Sources */,
+				1C72BF0D2BEF44D300A384E2 /* TrainersZoneModel.swift in Sources */,
+				1C72BF0F2BEF459800A384E2 /* SideModel.swift in Sources */,
 				1C60F2562BCB9C6700DA46A9 /* GlassDeckCreator.swift in Sources */,
 				1C60F2892BCBC3E600DA46A9 /* TrainersUICard.swift in Sources */,
 				1C60F2642BCBAB5B00DA46A9 /* PokemonCard.swift in Sources */,
@@ -429,6 +452,7 @@
 				1CF9E15B2BEA5CAC007AFA43 /* CardImage.swift in Sources */,
 				1C60F26A2BCBAC8600DA46A9 /* PokemonCardCategory.swift in Sources */,
 				1C60F27D2BCBBA1200DA46A9 /* TrainersCardData.swift in Sources */,
+				1CE54FDE2BEBB1D700134D82 /* CardEnergies.swift in Sources */,
 				1C60F28B2BCBC51B00DA46A9 /* BattleZoneModel.swift in Sources */,
 				1C60F2602BCBA3AE00DA46A9 /* DeckModel.swift in Sources */,
 				1C60F2502BCB8F2C00DA46A9 /* CardCategory.swift in Sources */,
@@ -576,6 +600,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,6 +630,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

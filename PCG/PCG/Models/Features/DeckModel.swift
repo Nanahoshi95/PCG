@@ -7,12 +7,10 @@ struct DeckModel {
     private (set) var cards = [Card]()
     
     /// デッキ作成
-    mutating func create(_ type: DeckType) -> [Card] {
+    mutating func create(_ type: DeckType) {
         
         let creator = DeckCreatorFactory().create(type)
         cards = creator.create()
-        
-        return cards
     }
     
     /// デッキにカード追加

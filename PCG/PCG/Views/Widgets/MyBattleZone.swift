@@ -2,13 +2,39 @@ import SwiftUI
 
 /// 自分のバトル場
 struct MyBattleZone: View {
+    
+    @State var battleCard: PokemonUICard? =  PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, damage: 100, canEvolution: false)
+    
+    @Binding var selectedCard: Card?
+    
+    @Namespace private var namespace
+    
     var body: some View {
-        VStack {
-            CardImage(cardNo: "037479", size: .Normal)
+        ZStack {
+            if let card = battleCard {
+                let c = Card(id: card.id, number: card.number, category: .Pokemon)
+                
+                if selectedCard != c {
+                    CardImage(cardNo: card.number, cardType: .BattleZone)
+                        .onTapGesture {
+                            withAnimation(.easeOutExpo) {
+                                selectedCard = c
+                            }
+                        }
+                        .matchedGeometryEffect(id: card.id, in: namespace)
+                    
+                    BattleZoneEnergies(energies: card.energies)
+                        .offset(x: 0, y: 45)
+                    
+                    if let damage = card.damage {
+                        DamageCount(damage: damage)
+                    }
+                    
+                    CardStatus(card: card)
+                        .frame(width: 90, height: 120, alignment: .topTrailing)
+                        .offset(y: 1)
+                }
+            }
         }
     }
-}
-
-#Preview {
-    MyBattleZone()
 }

@@ -10,7 +10,7 @@ struct OpponentHand: View {
             LazyVGrid(columns: Array(repeating: GridItem(.fixed(10)), count: myHands.count)) {
                 ForEach(myHands) {
                     card in
-                    CardImage(cardNo: "Back", size: .Normal)
+                    CardImage(cardNo: "Back", cardType: .Hand)
                 }
             }
         }
