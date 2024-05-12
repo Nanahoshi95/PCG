@@ -34,20 +34,24 @@ struct BattleView: View {
             
             VStack(spacing: 10) {
                 
-                OpponentHand(myHands: myHands)
+                OpponentHand(cardVM: cardVM)
+                    .frame(width: .infinity, height: Sizes.cardHeight)
                 
-                OpponentBench(cards: $myHands)
+                OpponentBench(cardVM: cardVM)
+                    .frame(width: .infinity, height: Sizes.benchCardHeight)
                 
-                OpponentBattleZone()
+                OpponentBattleZone(cardVM: cardVM)
                     .frame(width: Sizes.cardWidth, height: Sizes.cardHeight)
                 
                 
-                MyBattleZone(selectedCard: $selectedCard)
+                MyBattleZone(cardVM: cardVM, selectedCard: $selectedCard)
                     .frame(width: Sizes.cardWidth, height: Sizes.cardHeight)
                 
-                MyBench(cards: $myHands)
+                MyBench(cardVM: cardVM)
+                    .frame(width: .infinity, height: Sizes.benchCardHeight)
                 
-                MyHand(hand: $cardVM.myHand)
+                MyHand(cardVM: cardVM)
+                    .frame(width: .infinity, height: Sizes.cardHeight)
                 
             }
             

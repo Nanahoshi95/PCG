@@ -3,7 +3,7 @@ import SwiftUI
 /// 相手のベンチ
 struct OpponentBench: View {
     
-    @Binding var cards: [PokemonUICard]
+    @ObservedObject var cardVM: CardViewModel
     
     @GestureState private var dragOffset = CGSize.zero
     
@@ -12,8 +12,8 @@ struct OpponentBench: View {
     var body: some View {
         HStack(spacing: 0) {
             ForEach(0 ..< 5) { index in
-                    if index < cards.count {
-                        let card = cards[index]
+                if index < cardVM.opponentBench.cards.count {
+                    let card = cardVM.opponentBench.cards[index]
                         BenchCard(card: card)
                             .gesture(DragGesture( coordinateSpace: .global)
                                 .onChanged { value in
@@ -49,6 +49,5 @@ private extension OpponentBench {
 }
 
 #Preview {
-    OpponentBench(cards: .constant([PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, damage: 100, canEvolution: false),
-                              PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),]))
+    OpponentBench(cardVM: CardViewModel())
 }

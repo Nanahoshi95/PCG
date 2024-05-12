@@ -1,7 +1,7 @@
 import Foundation
 
 /// 手札Model
-struct HandModel {
+struct HandModel: Hashable {
     
     /// カード情報一覧
     private (set) var cards = [Card]()

@@ -3,7 +3,7 @@ import SwiftUI
 /// 自分の手札
 struct MyHand: View {
     
-    @Binding var hand: HandModel
+    @ObservedObject var cardVM: CardViewModel
     
     @GestureState private var dragOffset = CGSize.zero
     
@@ -12,7 +12,7 @@ struct MyHand: View {
     var body: some View {
         
         HStack(spacing: -50) {
-            ForEach(hand.cards) {
+            ForEach(cardVM.myHand.cards) {
                 card in
                 
                 CardImage(cardNo: card.number, cardType: .Hand)
@@ -46,5 +46,5 @@ private extension MyHand {
 }
 
 #Preview {
-    MyHand(hand: .constant(HandModel()))
+    MyHand(cardVM: CardViewModel())
 }

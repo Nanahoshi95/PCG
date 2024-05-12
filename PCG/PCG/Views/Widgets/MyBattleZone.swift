@@ -3,7 +3,7 @@ import SwiftUI
 /// 自分のバトル場
 struct MyBattleZone: View {
     
-    @State var battleCard: PokemonUICard? =  PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, damage: 100, canEvolution: false)
+    @ObservedObject var cardVM: CardViewModel
     
     @Binding var selectedCard: Card?
     
@@ -11,7 +11,7 @@ struct MyBattleZone: View {
     
     var body: some View {
         ZStack {
-            if let card = battleCard {
+            if let card = cardVM.myBattleZone.card {
                 let c = Card(id: card.id, number: card.number, category: .Pokemon)
                 if selectedCard != c {
                     BattleCard(card: card)
@@ -27,5 +27,5 @@ struct MyBattleZone: View {
 }
 
 #Preview {
-    MyBattleZone(selectedCard: .constant(Card(id: UUID(), number: "037479", category: .Pokemon)))
+    MyBattleZone(cardVM: CardViewModel(), selectedCard: .constant(Card(id: UUID(), number: "037479", category: .Pokemon)))
 }

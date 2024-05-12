@@ -3,7 +3,7 @@ import SwiftUI
 /// 自分のベンチ場
 struct MyBench: View {
     
-    @Binding var cards: [PokemonUICard]
+    @ObservedObject var cardVM: CardViewModel
     
     @GestureState private var dragOffset = CGSize.zero
     
@@ -12,8 +12,8 @@ struct MyBench: View {
     var body: some View {
         HStack(spacing: 0) {
             ForEach(0 ..< 5) { index in
-                if index < cards.count {
-                    let card = cards[index]
+                if index < cardVM.myBench.cards.count {
+                    let card = cardVM.myBench.cards[index]
                     BenchCard(card: card)
                     .gesture(DragGesture( coordinateSpace: .global)
                         .onChanged { value in
@@ -47,6 +47,5 @@ private extension MyBench {
 }
 
 #Preview {
-    MyBench(cards: .constant([PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, damage: 100, canEvolution: false),
-                              PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),]))
+    MyBench(cardVM: CardViewModel())
 }
