@@ -15,12 +15,12 @@ struct CardImage: View {
     
     // 幅
     var width: CGFloat {
-        return cardType == .Bench ? 60 : 90
+        cardType == .Bench ? Sizes.benchCardWidth : Sizes.cardWidth
     }
     
     // 高さ
     var height: CGFloat {
-        return cardType == .Bench ? 80: 120
+        cardType == .Bench ? Sizes.benchCardHeight: Sizes.cardHeight
     }
     
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4F81572BF0EB930082E5AC /* BenchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4F81562BF0EB930082E5AC /* BenchCard.swift */; };
 		1C60F20A2BCB874000DA46A9 /* PCGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2092BCB874000DA46A9 /* PCGApp.swift */; };
 		1C60F20C2BCB874000DA46A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F20B2BCB874000DA46A9 /* ContentView.swift */; };
 		1C60F20E2BCB874300DA46A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C60F20D2BCB874300DA46A9 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C4F81562BF0EB930082E5AC /* BenchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchCard.swift; sourceTree = "<group>"; };
 		1C60F2062BCB874000DA46A9 /* PCG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C60F2092BCB874000DA46A9 /* PCGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGApp.swift; sourceTree = "<group>"; };
 		1C60F20B2BCB874000DA46A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -209,7 +211,7 @@
 		1C60F2192BCB881500DA46A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1C60F26D2BCBAEBE00DA46A9 /* DataBase */,
+				1C60F26D2BCBAEBE00DA46A9 /* MockData */,
 				1C60F2202BCB885700DA46A9 /* Features */,
 				1C60F21F2BCB885200DA46A9 /* Types */,
 			);
@@ -232,6 +234,7 @@
 				1CE54FDD2BEBB1D700134D82 /* CardEnergies.swift */,
 				1CE54FDF2BEBB69E00134D82 /* CardStatus.swift */,
 				1C72BF0A2BEF3F0200A384E2 /* PlayMat.swift */,
+				1C4F81562BF0EB930082E5AC /* BenchCard.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -317,7 +320,7 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
-		1C60F26D2BCBAEBE00DA46A9 /* DataBase */ = {
+		1C60F26D2BCBAEBE00DA46A9 /* MockData */ = {
 			isa = PBXGroup;
 			children = (
 				1C60F26E2BCBAED100DA46A9 /* MoveData.swift */,
@@ -326,7 +329,7 @@
 				1C60F27C2BCBBA1200DA46A9 /* TrainersCardData.swift */,
 				1C60F27E2BCBBAD200DA46A9 /* TrainersEffectiveData.swift */,
 			);
-			path = DataBase;
+			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +409,7 @@
 				1CE54FDC2BEBB0E200134D82 /* DamageCount.swift in Sources */,
 				1C60F2682BCBAC2D00DA46A9 /* Evolution.swift in Sources */,
 				1C60F2222BCB888A00DA46A9 /* RouterView.swift in Sources */,
+				1C4F81572BF0EB930082E5AC /* BenchCard.swift in Sources */,
 				1C60F2422BCB8B2400DA46A9 /* Colors.swift in Sources */,
 				1C60F24A2BCB8C6200DA46A9 /* Energy.swift in Sources */,
 				1CE54FE02BEBB69E00134D82 /* CardStatus.swift in Sources */,
