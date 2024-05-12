@@ -13,28 +13,19 @@ struct MyBattleZone: View {
         ZStack {
             if let card = battleCard {
                 let c = Card(id: card.id, number: card.number, category: .Pokemon)
-                
                 if selectedCard != c {
-                    CardImage(cardNo: card.number, cardType: .BattleZone)
-                        .onTapGesture {
-                            withAnimation(.easeOutExpo) {
-                                selectedCard = c
-                            }
-                        }
-                        .matchedGeometryEffect(id: card.id, in: namespace)
-                    
-                    BattleZoneEnergies(energies: card.energies)
-                        .offset(x: 0, y: 45)
-                    
-                    if let damage = card.damage {
-                        DamageCount(damage: damage)
+                    BattleCard(card: card)
+                    .onTapGesture {
+                        selectedCard = c
                     }
-                    
-                    CardStatus(card: card)
-                        .frame(width: 90, height: 120, alignment: .topTrailing)
-                        .offset(y: 1)
+                    .matchedGeometryEffect(id: card.id, in: namespace)
+                    .animation(.easeOutExpo, value: selectedCard)
                 }
             }
         }
     }
+}
+
+#Preview {
+    MyBattleZone(selectedCard: .constant(Card(id: UUID(), number: "037479", category: .Pokemon)))
 }

@@ -32,18 +32,18 @@ struct BattleView: View {
             
             
             
-            VStack {
+            VStack(spacing: 10) {
                 
                 OpponentHand(myHands: myHands)
                 
                 OpponentBench(cards: $myHands)
                 
-                OpponentBattleZone(battleCard:
-                                    PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, damage: 100, canEvolution: false))
+                OpponentBattleZone()
+                    .frame(width: Sizes.cardWidth, height: Sizes.cardHeight)
                 
-                Spacer()
                 
                 MyBattleZone(selectedCard: $selectedCard)
+                    .frame(width: Sizes.cardWidth, height: Sizes.cardHeight)
                 
                 MyBench(cards: $myHands)
                 

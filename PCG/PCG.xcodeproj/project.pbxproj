@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C4F81572BF0EB930082E5AC /* BenchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4F81562BF0EB930082E5AC /* BenchCard.swift */; };
+		1C4F81592BF0F2DF0082E5AC /* BattleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4F81582BF0F2DF0082E5AC /* BattleCard.swift */; };
 		1C60F20A2BCB874000DA46A9 /* PCGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F2092BCB874000DA46A9 /* PCGApp.swift */; };
 		1C60F20C2BCB874000DA46A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60F20B2BCB874000DA46A9 /* ContentView.swift */; };
 		1C60F20E2BCB874300DA46A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C60F20D2BCB874300DA46A9 /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		1C4F81562BF0EB930082E5AC /* BenchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchCard.swift; sourceTree = "<group>"; };
+		1C4F81582BF0F2DF0082E5AC /* BattleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleCard.swift; sourceTree = "<group>"; };
 		1C60F2062BCB874000DA46A9 /* PCG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C60F2092BCB874000DA46A9 /* PCGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGApp.swift; sourceTree = "<group>"; };
 		1C60F20B2BCB874000DA46A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				1CE54FDF2BEBB69E00134D82 /* CardStatus.swift */,
 				1C72BF0A2BEF3F0200A384E2 /* PlayMat.swift */,
 				1C4F81562BF0EB930082E5AC /* BenchCard.swift */,
+				1C4F81582BF0F2DF0082E5AC /* BattleCard.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				1C60F2262BCB88C600DA46A9 /* HomeView.swift in Sources */,
 				1C60F2752BCBB28400DA46A9 /* EnergyCardData.swift in Sources */,
 				1C60F2902BCBE6F900DA46A9 /* BenchModel.swift in Sources */,
+				1C4F81592BF0F2DF0082E5AC /* BattleCard.swift in Sources */,
 				1C60F2792BCBB8BA00DA46A9 /* TrainersCard.swift in Sources */,
 				1C60F2712BCBAF7000DA46A9 /* PokemonCardData.swift in Sources */,
 				1C60F22E2BCB89C300DA46A9 /* MyBench.swift in Sources */,
