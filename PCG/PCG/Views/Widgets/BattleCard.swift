@@ -16,7 +16,7 @@ struct BattleCard: View {
             CardImage(cardNo: card.number, cardType: .BattleZone)
             
             BattleZoneEnergies(energies: card.energies)
-                .offset(x: 0, y: 45)
+                .offset(x: 0, y: 55)
             
             if let damage = card.damage {
                 DamageCount(damage: damage)
