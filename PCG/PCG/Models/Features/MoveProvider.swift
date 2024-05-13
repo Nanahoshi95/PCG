@@ -7,7 +7,7 @@ struct MoveProvider {
     private static let moves = MoveData.get()
     
     /// 取得
-    static func get(_ number: String, _ index: Int) -> Move {
-        return moves.first(where: { $0.number == number && $0.index == index })!
+    static func get(_ number: String, _ index: Int) -> Move? {
+        return moves.first(where: { $0.number == number && $0.index == index })
     }
 }

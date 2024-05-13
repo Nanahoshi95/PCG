@@ -1,8 +1,17 @@
 import SwiftUI
 
 struct Sizes {
+    
+    static var screenWidth: CGFloat {
+        UIScreen.main.bounds.width
+    }
+    
+    static var screenHeight: CGFloat {
+        UIScreen.main.bounds.height
+    }
+    
     static var cardWidth: CGFloat {
-        UIScreen.main.bounds.width / 4
+        screenWidth / 4
     }
     
     static var cardHeight: CGFloat {
@@ -10,7 +19,7 @@ struct Sizes {
     }
     
     static var benchCardWidth: CGFloat {
-        UIScreen.main.bounds.width / 6
+        screenWidth / 6
     }
     
     static var benchCardHeight: CGFloat {

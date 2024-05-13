@@ -4,7 +4,7 @@ import SwiftUI
 struct PCGApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BattleView()
         }
     }
 }

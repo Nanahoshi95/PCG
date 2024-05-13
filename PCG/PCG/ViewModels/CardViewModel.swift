@@ -48,12 +48,74 @@ class CardViewModel: ObservableObject {
     }
     
     func start() {
-        myDeck.create(.Glass)
-        opponentDeck.create(.Glass)
         
-        myDeck.shuffle()
+
+        while true {
+            myDeck.create(.Glass)
+            myDeck.shuffle()
+            
+            if let drawCards = myDeck.draw(7) {
+                if PokemonCardProvider.existsSeedPokemon(drawCards) {
+                    myHand.append(drawCards)
+                    break
+                }
+            }
+        }
         
-        myHand.append(myDeck.draw(7)!)
+        while true {
+            opponentDeck.create(.Glass)
+            opponentDeck.shuffle()
+            
+            if let drawCards = opponentDeck.draw(7) {
+                if PokemonCardProvider.existsSeedPokemon(drawCards) {
+                    opponentHand.append(drawCards)
+                    break
+                }
+            }
+        }
+        
+        for card in myHand.cards {
+            guard PokemonCardProvider.checkSeedPokemon(card) else {
+                continue
+            }
+            
+            
+            if !myBattleZone.exists() {
+                myHand.play(card)
+                myBattleZone.play(card)
+                
+                continue
+            }
+            
+            if myBench.canAppend() {
+                myHand.play(card)
+                myBench.append(card)
+                
+                continue
+            }
+        }
+        
+        for card in opponentHand.cards {
+            guard PokemonCardProvider.checkSeedPokemon(card) else {
+                continue
+            }
+            
+            
+            if !opponentBattleZone.exists() {
+                opponentHand.play(card)
+                opponentBattleZone.play(card)
+                
+                continue
+            }
+            
+            if opponentBench.canAppend() {
+                opponentHand.play(card)
+                opponentBench.append(card)
+                
+                continue
+            }
+        }
+        
         
         deploySide()
     }
@@ -62,8 +124,10 @@ class CardViewModel: ObservableObject {
     func deploySide() {
         if let drawCards = myDeck.draw(6) {
             mySide.deploy(drawCards)
-        } else {
-            
+        }
+        
+        if let drawCards = opponentDeck.draw(6) {
+            opponentSide.deploy(drawCards)
         }
     }
     

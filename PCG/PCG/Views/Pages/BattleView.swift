@@ -35,10 +35,10 @@ struct BattleView: View {
             VStack(spacing: 10) {
                 
                 OpponentHand(cardVM: cardVM)
-                    .frame(width: .infinity, height: Sizes.cardHeight)
+                    .frame(width: Sizes.screenWidth, height: Sizes.cardHeight)
                 
                 OpponentBench(cardVM: cardVM)
-                    .frame(width: .infinity, height: Sizes.benchCardHeight)
+                    .frame(width: Sizes.screenWidth, height: Sizes.benchCardHeight)
                 
                 OpponentBattleZone(cardVM: cardVM)
                     .frame(width: Sizes.cardWidth, height: Sizes.cardHeight)
@@ -48,10 +48,10 @@ struct BattleView: View {
                     .frame(width: Sizes.cardWidth, height: Sizes.cardHeight)
                 
                 MyBench(cardVM: cardVM)
-                    .frame(width: .infinity, height: Sizes.benchCardHeight)
+                    .frame(width: Sizes.screenWidth, height: Sizes.benchCardHeight)
                 
                 MyHand(cardVM: cardVM)
-                    .frame(width: .infinity, height: Sizes.cardHeight)
+                    .frame(width: Sizes.screenWidth, height: Sizes.cardHeight)
                 
             }
             

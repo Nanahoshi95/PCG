@@ -52,7 +52,7 @@ struct PokemonCard {
         self.type = type
         self.weaknessType = weaknessType
         self.resistanceType = resistanceType
-        self.move1 = MoveProvider.get(number, 1)
+        self.move1 = MoveProvider.get(number, 1)!
         self.move2 = MoveProvider.get(number, 2)
         self.retreatEnergy = retreatEnergy
         self.retreatCount = retreatCount
