@@ -2,6 +2,9 @@ import Foundation
 
 class CardViewModel: ObservableObject {
     
+    
+    let onlineRepository = OnlineGameRepository()
+    
     /// 自分のデッキ
     @Published var myDeck = DeckModel()
     
@@ -129,6 +132,10 @@ class CardViewModel: ObservableObject {
         if let drawCards = opponentDeck.draw(6) {
             opponentSide.deploy(drawCards)
         }
+    }
+    
+    func quitGame() {
+        onlineRepository.quitGame()
     }
     
 }

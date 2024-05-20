@@ -3,11 +3,9 @@ import SwiftUI
 /// 対戦画面
 struct BattleView: View {
     
-    @StateObject private var cardVM = CardViewModel()
+    @Environment(\.dismiss) var dismiss
     
-    @State private var myHands: [PokemonUICard] = [
-        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, damage: 100, canEvolution: false),
-        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),        PokemonUICard(id: UUID(), number: "037479", evolution: .Basic, category: .V, hitPoint: 180, maxHitPoint: 180, energies: [EnergyUICard(id: UUID(), type: .Glass)], type: .Glass, move1: Move(number: "", index: 1, name: "1", energies: []), retreatCount: 1, canEvolution: false),]
+    @StateObject private var cardVM = CardViewModel()
     
     @Namespace private var namespace
     
@@ -16,7 +14,7 @@ struct BattleView: View {
     var body: some View {
         ZStack {
             Color(red: 218/255, green: 234/255, blue: 248/255)
-              .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.all)
             
             ZStack {
                 
@@ -28,8 +26,6 @@ struct BattleView: View {
                     .frame(height: 40)
                     .foregroundStyle(.white)
             }
-            
-            
             
             
             VStack(spacing: 10) {
@@ -62,11 +58,33 @@ struct BattleView: View {
                     .onTapGesture {
                         withAnimation(.easeOutExpo) {
                             selectedCard = nil
-                          }
+                        }
                     }
                     .matchedGeometryEffect(id: card.id
                                            , in: namespace)
             }
+            
+            HStack {
+                Spacer()
+                
+                Button {
+                    cardVM.quitGame()
+                    dismiss()
+                } label: {
+                    Text("終了")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.red)
+                }
+                .frame(width: 80, height: 40)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.white)
+                )
+            }
+            .frame(width: Sizes.screenWidth, height: Sizes.screenHeight, alignment: .top)
+            .padding(.top)
+            .padding(.trailing, 50)
         }
     }
 }

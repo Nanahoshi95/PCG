@@ -2,8 +2,19 @@ import SwiftUI
 
 /// HOME画面
 struct HomeView: View {
+    @State private var isPresented = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button {
+                isPresented.toggle()
+            } label: {
+                Text("Online")
+            }
+        }
+        .fullScreenCover(isPresented: $isPresented) {
+            BattleView()
+        }
     }
 }
 
