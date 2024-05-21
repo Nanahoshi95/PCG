@@ -1,7 +1,7 @@
 import Foundation
 
 /// デッキの構造体
-struct DeckModel {
+struct DeckModel : Codable {
     
     /// カード一覧
     private (set) var cards = [Card]()

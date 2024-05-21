@@ -1,7 +1,7 @@
 import Foundation
 
 /// UI用ポケモンカード
-struct EnergyUICard : Identifiable {
+struct EnergyUICard : Identifiable, Codable {
     
         /// ID
         let id: UUID

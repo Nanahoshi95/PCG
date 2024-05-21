@@ -1,7 +1,7 @@
 import Foundation
 
 /// ベンチのModel
-struct BenchModel {
+struct BenchModel : Codable {
     
     /// カード一覧
     private (set) var cards = [PokemonUICard]()

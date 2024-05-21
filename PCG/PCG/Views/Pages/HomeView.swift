@@ -13,7 +13,7 @@ struct HomeView: View {
             }
         }
         .fullScreenCover(isPresented: $isPresented) {
-            BattleView()
+            BattleView(cardVM: CardViewModel())
         }
     }
 }

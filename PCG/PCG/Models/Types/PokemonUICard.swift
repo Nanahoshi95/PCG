@@ -1,7 +1,7 @@
 import Foundation
 
 /// UI用ポケモンカード
-struct PokemonUICard : Identifiable, Equatable {
+struct PokemonUICard : Identifiable, Equatable, Codable {
     
     /// カードを一意に識別するためのID（同一のカードを区別する用）
     var id: UUID

@@ -1,6 +1,6 @@
 import Foundation
 
 /// カードの種別（ポケモン、グッズ、サポート、エネルギー）
-enum CardCategory {
+enum CardCategory: Codable {
     case Pokemon, Goods, Support, Energy
 }

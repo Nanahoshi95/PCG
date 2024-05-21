@@ -1,7 +1,7 @@
 import Foundation
 
 /// トレーナー場のモデル
-struct TrainersZoneModel {
+struct TrainersZoneModel : Codable {
     
     private(set) var card: TrainersUICard? = nil
     

@@ -19,7 +19,7 @@ struct PCGApp: App {
     
     var body: some Scene {
         WindowGroup {
-            BattleView()
+            HomeView()
         }
     }
 }

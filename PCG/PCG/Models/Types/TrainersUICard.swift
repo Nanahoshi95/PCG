@@ -1,7 +1,7 @@
 import Foundation
 
 /// UI用トレーナーカード
-struct TrainersUICard : Identifiable {
+struct TrainersUICard : Identifiable, Codable {
     
     /// ID
     var id: UUID

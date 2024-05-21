@@ -1,7 +1,7 @@
 import Foundation
 
 /// ポケモンの技
-struct Move {
+struct Move : Codable {
     
     /// ポケモンカードの番号
     var number: String

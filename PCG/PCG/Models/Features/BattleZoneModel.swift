@@ -1,7 +1,7 @@
 import Foundation
 
 /// バトル場Model
-struct BattleZoneModel {
+struct BattleZoneModel : Codable {
     
     /// 出ているカード
     private (set) var card: PokemonUICard? = nil

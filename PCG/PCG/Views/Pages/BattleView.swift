@@ -5,7 +5,7 @@ struct BattleView: View {
     
     @Environment(\.dismiss) var dismiss
     
-    @StateObject private var cardVM = CardViewModel()
+    @ObservedObject var cardVM: CardViewModel
     
     @Namespace private var namespace
     
@@ -90,7 +90,7 @@ struct BattleView: View {
 }
 
 #Preview {
-    BattleView()
+    BattleView(cardVM: CardViewModel())
 }
 
 

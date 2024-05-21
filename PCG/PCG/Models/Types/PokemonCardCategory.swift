@@ -1,6 +1,6 @@
 import Foundation
 
 /// ポケモンカード種別
-enum PokemonCardCategory {
+enum PokemonCardCategory : Codable {
     case Normal, V
 }

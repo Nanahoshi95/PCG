@@ -1,54 +1,56 @@
 import Foundation
+import Combine
 
 class CardViewModel: ObservableObject {
     
     
     let onlineRepository = OnlineGameRepository()
+
+    @Published private(set) var myDeck = DeckModel()
+    @Published private(set) var opponentDeck = DeckModel()
+    @Published private(set) var myHand = HandModel()
+    @Published private(set) var opponentHand = HandModel()
+    @Published private(set) var myBattleZone = BattleZoneModel()
+    @Published private(set) var opponentBattleZone = BattleZoneModel()
+    @Published private(set) var myTrainersZone = TrainersZoneModel()
+    @Published private(set) var opponentTrainersZone = TrainersZoneModel()
+    @Published private(set) var myBench = BenchModel()
+    @Published private(set) var opponentBench = BenchModel()
+    @Published private(set) var mySide = SideModel()
+    @Published private(set) var opponentSide = SideModel()
     
-    /// 自分のデッキ
-    @Published var myDeck = DeckModel()
+    @Published private(set) var isShowLoading = false
+    @Published private(set) var onlineGame: Game?
     
-    /// 相手のデッキ
-    @Published var opponentDeck = DeckModel()
-    
-    /// 自分の手札
-    @Published var myHand = HandModel()
-    
-    /// 相手の手札
-    @Published var opponentHand = HandModel()
-    
-    /// 自分のバトル場
-    @Published var myBattleZone = BattleZoneModel()
-    
-    /// 相手のバトル場
-    @Published var opponentBattleZone = BattleZoneModel()
-    
-    /// 自分のトレーナーズ場
-    @Published var myTrainersZone = TrainersZoneModel()
-    
-    /// 相手のトレーナーズ場
-    @Published var opponentTrainersZone = TrainersZoneModel()
-    
-    /// 自分のベンチ
-    @Published var myBench = BenchModel()
-    
-    /// 相手のベンチ
-    @Published var opponentBench = BenchModel()
-    
-    /// 自分のサイド
-    @Published var mySide = SideModel()
-    
-    /// 相手のサイド
-    @Published var opponentSide = SideModel()
+    private var cancellables: Set<AnyCancellable> = []
     
     init() {
         start()
+        observeData()
     }
     
-    /// 初期化処理
-    func intialize() {
-
+    private func observeData() {
+        onlineRepository.$game
+            .map { $0 }
+            .assign(to: &$onlineGame)
+        
+        $onlineGame
+            .drop(while: { $0 == nil })
+            .map { $0?.player2Id == "" }
+            .assign(to: &$isShowLoading)
+        
+        $onlineGame
+            .drop(while: { $0 == nil })
+            .sink { updateGame in
+                self.syncOnlineWithLocal(onlineGame: updateGame)
+            }
+            .store(in: &cancellables)
     }
+    
+    private func syncOnlineWithLocal(onlineGame: Game?) {
+        
+    }
+    
     
     func start() {
         

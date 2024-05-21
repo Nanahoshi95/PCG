@@ -1,7 +1,7 @@
 import Foundation
 
 /// カード情報
-struct Card: Identifiable, Equatable, Hashable {
+struct Card: Identifiable, Equatable, Hashable, Codable {
     
     /// カードを一意に識別するためのID（同一のカードを区別する用）
     var id = UUID()

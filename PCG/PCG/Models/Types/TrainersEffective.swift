@@ -1,7 +1,7 @@
 import Foundation
 
 /// トレーナーの効果
-struct TrainersEffective {
+struct TrainersEffective : Codable {
 
     /// トレーナー番号
     var number: String
